@@ -13,12 +13,9 @@ function dobackup {
 
     /snap/bin/kubectl exec -it $current_pod -n peelsense -- mysqldump -u $user -p$pass $db > $backup_location/$db-$date.sql
 
-
     gzip -c $backup_location/$db-$date.sql > $backup_location/$db-$date.sql.gz
 
-
     rm $backup_location/$db-$date.sql
-
 }
 
 function cleanold {
