@@ -6,7 +6,7 @@ return {
         require('lualine').setup({
             options = {
                 icons_enabled = true,
-                theme = 'material-gruvbox',  -- Ensure this theme is available or change as needed
+                theme = 'gruvbox',  -- Ensure this theme is available or change as needed
                 component_separators = { left = '', right = ''},
                 section_separators = { left = '', right = ''},
                 disabled_filetypes = {
