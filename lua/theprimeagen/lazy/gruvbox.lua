@@ -3,7 +3,7 @@ local function configure_gruvbox()
   -- vim.g.gruvbox_contrast_dark = 'hard'
 
   -- Set the colorscheme
-  vim.cmd[[colorscheme gruvbox]]
+  vim.cmd[[colorscheme vscode]]
 end
 
 return {
