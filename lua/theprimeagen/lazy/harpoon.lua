@@ -1,7 +1,7 @@
 return {
   {
       "ThePrimeagen/harpoon",
-      branch = "main", -- Ensure this is the correct branch
+      branch = "harpoon2", -- Ensure this is the correct branch
       requires = { "nvim-lua/plenary.nvim" },
       config = function()
         local harpoon = require("harpoon")
