@@ -54,4 +54,11 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+-- Ctrl+Backspace to delete a word to the left (in insert and normal mode)
+vim.keymap.set("i", "<C-BS>", "<C-w>")   -- In insert mode
+vim.keymap.set("n", "<C-BS>", "db")      -- In normal mode
+
+-- Ctrl+Delete to delete a word to the right (in insert and normal mode)
+vim.keymap.set("i", "<C-Del>", "<C-o>dw")  -- In insert mode
+vim.keymap.set("n", "<C-Del>", "dw")       -- In normal mode
 
