@@ -2,8 +2,12 @@ function ColorMyPencils(color)
 	color = color or "rose-pine-moon"
 	vim.cmd.colorscheme(color)
 
+	-- Set transparent backgrounds
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
+	-- Remove vertical line for line length (colorcolumn)
+	vim.opt.colorcolumn = ""
 end
 
 return {
